@@ -95,7 +95,7 @@ Diese Seite würde dem Benutzer ermöglichen, das Glücksrad zu drehen, Buchstab
 
 # 5 Prototyp
 Spiel: <br>
-![image](https://user-images.githubusercontent.com/89385736/212047008-75330762-6636-4233-87a4-53b1ae8017e5.png)
+![image](https://user-images.githubusercontent.com/89385736/220880987-682d1614-afe8-4652-bf23-b27097901c2a.png)
 
 
 # 6 Implementation
