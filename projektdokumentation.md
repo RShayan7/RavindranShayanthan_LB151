@@ -96,6 +96,7 @@ Diese Seite würde dem Benutzer ermöglichen, das Glücksrad zu drehen, Buchstab
 # 5 Prototyp
 Game-Screen: <br>
 ![image](https://user-images.githubusercontent.com/89385736/220881232-9d917b4f-5273-48fd-8f00-5e14c9fdafc3.png)
+<br>
 Admin-Screen: <br>
 ![image](https://user-images.githubusercontent.com/89385736/220882519-716eb70c-f0c6-4a1b-ae68-e9c50146a548.png)
 
