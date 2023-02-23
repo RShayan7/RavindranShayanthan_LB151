@@ -1,0 +1,237 @@
+
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Spin Wheel</title>
+</head>
+<body>
+	<button id="spin">Spin</button>
+	<span class="arrow"></span>
+<div class="container">
+	<div class="one">a</div>
+	<div class="two">b</div>
+	<div class="three">c</div>
+	<div class="four">d</div>
+	<div class="five">e</div>
+	<div class="six">f</div>
+	<div class="seven">g</div>
+	<div class="eight">h</div>
+    <div class="nine">i</div>
+	<div class="ten">j</div>
+	<div class="eleven">k</div>
+	<div class="twelve">l</div>
+    <div class="thirdteen">m</div>
+    <div class="fourteen">n</div>
+	<div class="fifteen">o</div>
+	<div class="sixteen">p</div>
+	<div class="seventeen">q</div>
+	<div class="eighteen">r</div>
+	<div class="nineteen">s</div>
+	<div class="twenty">t</div>
+	<div class="twenty-one">u</div>
+    <div class="twenty-two">v</div>
+	<div class="twenty-three">w</div>
+    <div class="twenty-four">x</div>
+    <div class="twenty-five">y</div>
+	<div class="twenty-six">z</div>
+	
+</div>
+</body>
+<style>
+    *{
+	box-sizing:border-box;
+}
+
+body{
+	margin:0;
+	padding:0;
+	background-color: #34495e;
+	display:flex;
+	align-items:center;
+	justify-content: center;
+	height:100vh;
+	overflow:hidden;
+}
+
+.container{
+	width:500px;
+	height:500px;
+	background-color: #ccc;
+	border-radius:50%;
+	border:15px solid #dde;
+	position: relative;
+	overflow: hidden;
+	transition: 5s;
+}
+
+.container div{
+	height:50%;
+	width:200px;
+	position: absolute;
+	clip-path: polygon(100% 0 , 50% 100% , 0 0 );
+	transform:translateX(-50%);
+	transform-origin:bottom;
+	text-align:center;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	font-size:10px;
+	font-weight:bold;
+	font-family:sans-serif;
+	color:#fff;
+	left:135px;
+}
+
+
+.container .one{
+	background-color: #3f51b5;
+	left:50%;
+}
+.container .two{
+	background-color: #ff9800;
+	transform: rotate(20.85deg);
+}
+.container .three{
+	background-color: #e91e63;
+	transform:rotate(27.7deg);
+}
+.container .four{
+	background-color: #4caf50;
+	transform: rotate(41.55deg);
+}
+.container .five{
+	background-color: #009688;
+	transform: rotate(55.4deg);
+}
+.container .six{
+	background-color: #795548;
+	transform: rotate(69.25deg);
+}
+.container .seven{
+	background-color: #9c27b0;
+	transform: rotate(83.1deg);
+}
+.container .eight{
+	background-color: #f44336;
+	transform: rotate(96.95deg);
+}
+.container .nine{
+	background-color: #c536f4;
+	transform: rotate(110.8deg);
+}
+.container .ten{
+	background-color: #8c7268;
+	transform: rotate(124.65deg);
+}
+.container .eleven{
+	background-color: #b0277e;
+	transform: rotate(138.5deg);
+}
+.container .twelve{
+	background-color: #36f4ee;
+	transform: rotate(152.35deg);
+}
+.container .thirdteen{
+	background-color: #f4ee36;
+	transform: rotate(166.2deg);
+}
+.container .fourteen{
+	background-color: #f44336;
+	transform: rotate(180.05deg);
+}
+.container .fifteen{
+	background-color: #c536f4;
+	transform: rotate(193.9deg);
+}
+.container .sixteen{
+	background-color: #8c7268;
+	transform: rotate(207.75deg);
+}
+.container .seventeen{
+	background-color: #b0277e;
+	transform: rotate(221.6deg);
+}
+.container .eighteen{
+	background-color: #36f4ee;
+	transform: rotate(235.45deg);
+}
+.container .nineteen{
+	background-color: #f4ee36;
+	transform: rotate(249.3deg);
+}
+.container .twenty{
+	background-color: #b0277e;
+	transform: rotate(263.15deg);
+}
+.container .twenty-one{
+	background-color: #36f4ee;
+	transform: rotate(277deg);
+}
+.container .twenty-two{
+	background-color: #f4ee36;
+	transform: rotate(250.85deg);
+}
+.container .twenty-three{
+	background-color: #36f4ee;
+	transform: rotate(270deg);
+}
+.container .twenty-four{
+	background-color: #f4ee36;
+	transform: rotate(290deg);
+}
+.container .twenty-five{
+	background-color: #36f4ee;
+	transform: rotate(332.4deg);
+}
+.container .twenty-six{
+	background-color: #85f436;
+	transform: rotate(345deg);
+}
+
+.arrow{
+	position: absolute;
+	top:0;
+	left:50%;
+	transform: translateX(-50%);
+	color:#fff;
+}
+
+.arrow::before{
+	content:"\1F817";
+	font-size:50px;
+}
+
+#spin{
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:10;
+	background-color: #e2e2e2;
+	text-transform: uppercase;
+	border:8px solid #fff;
+	font-weight:bold;
+	font-size:20px;
+	color:#a2a2a2;
+	width: 80px;
+	height:80px;
+	font-family: sans-serif;
+	border-radius:50%;
+	cursor: pointer;
+	outline:none;
+	letter-spacing: 1px;
+}
+</style>
+<script>
+    let container = document.querySelector(".container");
+	let btn = document.getElementById("spin");
+	let number = Math.ceil(Math.random() * 1000);
+
+btn.onclick = function () {
+	container.style.transform = "rotate(" + number + "deg)";
+	number += Math.ceil(Math.random() * 1000);
+}
+</script>
+</html>
