@@ -4,9 +4,9 @@ Ravindran
 
 | Datum | Version | Zusammenfassung                                              |
 | ----- | ------- | ------------------------------------------------------------ |
-|       | 0.0.1   | ✍️ Jedes Mal, wenn Sie an dem Projekt arbeiten, fügen Sie hier eine neue Zeile ein und beschreiben in *einem* Satz, was Sie erreicht haben. |
-|       | 0.0.2   |                                                              |
-|       | 0.0.3   |                                                              |
+| 09.02.2023      | 0.0.1   | Heute habe ich die Navbar implementiert. |
+| 12.02.2023      | 0.0.2   | Heute habe ich versucht das Login mit der Firebase zu verknüpfen.                                                             |
+| 16.02.2023     | 0.0.3   |  Heute habe ich nach den Spielfunktionen recherchiert.                                                            |
 |       | 0.0.4   |                                                              |
 |       | 0.0.5   |                                                              |
 |       | 0.0.6   |                                                              |
