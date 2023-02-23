@@ -94,8 +94,11 @@ Diese Seite würde dem Benutzer ermöglichen, das Glücksrad zu drehen, Buchstab
 
 
 # 5 Prototyp
-Spiel: <br>
-![image](https://user-images.githubusercontent.com/89385736/220880987-682d1614-afe8-4652-bf23-b27097901c2a.png)
+Game-Screen: <br>
+![image](https://user-images.githubusercontent.com/89385736/220881232-9d917b4f-5273-48fd-8f00-5e14c9fdafc3.png)
+Admin-Screen: <br>
+![image](https://user-images.githubusercontent.com/89385736/220882519-716eb70c-f0c6-4a1b-ae68-e9c50146a548.png)
+
 
 
 # 6 Implementation
