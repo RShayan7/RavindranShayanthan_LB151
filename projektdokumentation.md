@@ -4,9 +4,9 @@ Ravindran
 
 | Datum | Version | Zusammenfassung                                              |
 | ----- | ------- | ------------------------------------------------------------ |
-|       | 0.0.1   | ✍️ Jedes Mal, wenn Sie an dem Projekt arbeiten, fügen Sie hier eine neue Zeile ein und beschreiben in *einem* Satz, was Sie erreicht haben. |
-|       | 0.0.2   |                                                              |
-|       | 0.0.3   |                                                              |
+| 09.02.2023      | 0.0.1   | Heute habe ich die Navbar implementiert. |
+| 12.02.2023      | 0.0.2   | Heute habe ich versucht das Login mit der Firebase zu verknüpfen.                                                             |
+| 16.02.2023     | 0.0.3   |  Heute habe ich nach den Spielfunktionen recherchiert.                                                            |
 |       | 0.0.4   |                                                              |
 |       | 0.0.5   |                                                              |
 |       | 0.0.6   |                                                              |
@@ -94,8 +94,12 @@ Diese Seite würde dem Benutzer ermöglichen, das Glücksrad zu drehen, Buchstab
 
 
 # 5 Prototyp
-Spiel: <br>
-![image](https://user-images.githubusercontent.com/89385736/212047008-75330762-6636-4233-87a4-53b1ae8017e5.png)
+Game-Screen: <br>
+![image](https://user-images.githubusercontent.com/89385736/220881232-9d917b4f-5273-48fd-8f00-5e14c9fdafc3.png)
+<br>
+Admin-Screen: <br>
+![image](https://user-images.githubusercontent.com/89385736/220882519-716eb70c-f0c6-4a1b-ae68-e9c50146a548.png)
+
 
 
 # 6 Implementation
