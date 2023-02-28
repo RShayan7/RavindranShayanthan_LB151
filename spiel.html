@@ -1,31 +1,47 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gluecksrad</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-
-  <body>
-    <header>
-      <nav>
-        <a class="logo" href="/">Glücksrad-Spiel</a>
-        <div class="mobile-menu">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Worterraten-Spiel</title>
+  <link rel="stylesheet" href="style1.css">
+</head>
+<header>
+    <nav>
+      <a class="logo" href="/">Glücksrad-Spiel</a>
+      <div class="mobile-menu">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+      <ul class="nav-list">
+        <li><a href="homescreen.html">Spiel-Anleitung</a></li>
+        <li><a href="spiel.html">Spiel</a></li>
+        <li><a href="">Highscorelist</a></li>
+       
+      </ul>
+    </nav>
+  </header>
+<body>
+</br>
+  <div class="container">
+    <h1>Kategorie: Fussball</h1>
+    <button id="start-button">Start</button>
+    <div id="game">
+      <div class="game-board">
+        <div id="word"></div>
+        <div id="guesses"></div>
+        <div id="spin-result"></div>
+        <div id="total-prize"></div>
+        <div id="guess-input-wrapper">
+          <input type="text" id="guess-input" maxlength="1" autofocus>
+          <button id="guess-button" disabled>Guess</button>
+          <button id="spin-button" disabled>Spin</button>
         </div>
-        <ul class="nav-list">
-          <li><a href="#">Spiel-Anleitung</a></li>
-          <li><a href="#">Spiel</a></li>
-          <li><a href="#">Highscorelist</a></li>
-         
-        </ul>
-      </nav>
-    </header>
-    <main></main>
-    <script src="mobile-navbar.js"></script>
-  </body>
+      </div>
+      <div class="game-wheel"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
 </html>
