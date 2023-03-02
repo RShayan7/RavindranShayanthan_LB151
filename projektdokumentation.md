@@ -136,45 +136,23 @@ Admin-Screen: <br>
 
 # 8 Testprotokoll
 
-✍️ Fügen Sie hier den Link zu dem Video ein, welches den Testdurchlauf dokumentiert.
+Link zu den Testfällen: https://youtu.be/K6zBTvL5u70
+
 
 | TC-№ | Datum | Resultat | Tester |
 | ---- | ----- | -------- | ------ |
-| 1.1  | 02.03.2023      | OK  ->   
-
-Uploading T1.mp4…
-
-     |    R.Shayanthan    |
-| 2.1 |  02.03.2023     |  
-
-https://user-images.githubusercontent.com/89385736/222450911-37fe183a-5db7-4cdc-99f6-38ed9a214888.mp4
-
-        |   R.Shayanthan      |
-| 3.1  | 02.03.2023      |  
-
-Uploading T3.mp4…
-
-        |  R.Shayanthan       |
-| A.1 |  02.03.2023     |  
-
-Uploading TA.mp4…
-
-        |  R.Shayanthan       |
-| 4.1  | 02.03.2023      |  
-
-Uploading T4.mp4…
-
-        | R.Shayanthan        |
-| 5.1 |  02.03.2023     |   
-
-Uploading T5.mp4…
-
-       |   R.Shayanthan      |
-| 6.1  | 02.03.2023      |          |  R.Shayanthan       |
+| 1.1  | 02.03.2023      | OK |    R.Shayanthan    |
+| 2.1 |  02.03.2023     |  OK |   R.Shayanthan      |
+| 3.1  | 02.03.2023      |  OK |  R.Shayanthan       |
+| A.1 |  02.03.2023     |  OK |  R.Shayanthan       |
+| 4.1  | 02.03.2023      |  OK | R.Shayanthan        |
+| 5.1 |  02.03.2023     |   OK  |   R.Shayanthan      |
+| 6.1  | 02.03.2023      |     OK     |  R.Shayanthan       |
 | 7.1  | 02.03.2023      |   NOK       |  R.Shayanthan       |
 
 
-✍️ Vergessen Sie nicht, ein Fazit hinzuzufügen, welches das Test-Ergebnis einordnet.
+Fazit: 
+Im Allgmeinen haben die meisten Testfälle bestanden. Wenn man aber die Userstorys mit einbezieht, dann haben mehr als die Hälfte nicht bestanden. Nächstes mal sollten alle Anforderungen konkreter beachtet werden.
 
 # 9 `README.md`
 
