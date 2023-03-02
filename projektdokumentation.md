@@ -63,8 +63,9 @@ Diese Seite würde dem Benutzer ermöglichen: das Spiel zu starten und Buchstabe
 | A    |      Muss           | Funktional      | Als ein Kandidat möchte ich bereits jeden erratenen Buchtsaben sehen können, damit ich meinen Fortschritt im Spiel verfolgen kann.                                                                                                    |
 | 5    |      Muss           | Funktional     | Als ein Kandidat möchte ich benachrichtigt werden sollen bei richtigen erratenen Wort, damit ich keine Fehler mache.                                                                                             |
 | B    |      Kann           | Qualität     | Als ein Kandidat möchte ich die Veränderungen meiner Lebenspunkte sehen können, damit ich meinen Fortschritt im Spiel verfolgen kann.                                                                           |
-| 6   |    Muss             | Funktional     | Als ein Kandidat möchte ich eine aufsteigend sortierte Highscore-Liste sehen, die Rang, Name, Zeitpunkt, Geldbetrag und Anzahl der Spielrunden enthält, damit ich meine Leistung im Vergleich zu anderen Spielern einschätzen kann.                        |
-| 7    |      Muss           | Funktional     | Als ein Kandidat möchte ich jederzeit die Möglichkeit haben, das Spiel neuzustarten, damit ich flexibel entscheiden kann.|
+| 6    |      Muss           | Funktional     | Als ein Kandidat möchte ich jederzeit die Möglichkeit haben, das Spiel neuzustarten, damit ich flexibel entscheiden kann.|
+| 7   |    Muss             | Funktional     | Als ein Kandidat möchte ich eine aufsteigend sortierte Highscore-Liste sehen, die Rang, Name, Zeitpunkt, Geldbetrag und Anzahl der Spielrunden enthält, damit ich meine Leistung im Vergleich zu anderen Spielern einschätzen kann.                        |
+
 
 
 
@@ -84,7 +85,7 @@ Diese Seite würde dem Benutzer ermöglichen: das Spiel zu starten und Buchstabe
 | 4.1  |  Applikation ist gestartet   | 1.) Startseite geöffnet <br> 2.) Anmelden <br> 3.) Navigaton -> *Spiel* wählen <br> 4.) auf Button "Starten" klicken  <br> 5.) ein bereits eingegebener Buchstabe wird eingegeben | Es erscheint eine Meldung, dass der gleiche Buchstabe eingegeben wurde.      |
 | 5.1  |    Applikation ist gestartet   | 1.) Startseite geöffnet <br> 2.) Anmelden <br> 3.) Navigaton -> *Spiel* wählen <br> 4.) auf Button "Starten" klicken  <br> 5.) alle Buchstaben werden korrekt eingegeben | Es erscheint eine Meldung, wobei der Spieler gratuliert wird für das richtig erratene Wort.|
 | 6.1  |  Applikation ist gestartet   | 1.) Startseite geöffnet <br> 2.) Anmelden <br> 3.) Navigaton -> *Spiel* wählen <br> 4.) auf Button "Starten" klicken  <br> 5.) mehr als 7 Versuche werden betätigt | Es erscheint eine Meldung, dass der Spieler, leider das Wort nicht erraten hat und das Spiel wird dann beendet.  |
-| 7.1  |  Applikation ist gestartet   | 1.) Startseite geöffnet <br> 2.) Spieler meldet sich an  | Der Spieler wird auf eine andere Seite weitergleitet. |
+| 7.1  |  Applikation ist gestartet   | 1.) Startseite geöffnet <br> 2.) Spieler meldet sich an <br> 3.)Navigaton -> *Highscoreliste* wählen <br> 4.) Liste sichtbar <br> 5.) mehr  | Der Spieler wird auf eine andere Seite weitergleitet, wobei er die Highscoreliste sehen kann. |
 
 
 
@@ -139,13 +140,38 @@ Admin-Screen: <br>
 
 | TC-№ | Datum | Resultat | Tester |
 | ---- | ----- | -------- | ------ |
-| 1.1  | 02.03.2023      |          |    R.Shayanthan    |
-| 2.1 |  02.03.2023     |          |   R.Shayanthan      |
-| 3.1  | 02.03.2023      |          |  R.Shayanthan       |
-| 4.1 |  02.03.2023     |          |  R.Shayanthan       |
-| 5.1  | 02.03.2023      |          | R.Shayanthan        |
-| 6.1 |  02.03.2023     |          |   R.Shayanthan      |
-| 7.1  | 02.03.2023      |          |  R.Shayanthan       |
+| 1.1  | 02.03.2023      | OK  ->   
+
+Uploading T1.mp4…
+
+     |    R.Shayanthan    |
+| 2.1 |  02.03.2023     |  
+
+https://user-images.githubusercontent.com/89385736/222450911-37fe183a-5db7-4cdc-99f6-38ed9a214888.mp4
+
+        |   R.Shayanthan      |
+| 3.1  | 02.03.2023      |  
+
+Uploading T3.mp4…
+
+        |  R.Shayanthan       |
+| A.1 |  02.03.2023     |  
+
+Uploading TA.mp4…
+
+        |  R.Shayanthan       |
+| 4.1  | 02.03.2023      |  
+
+Uploading T4.mp4…
+
+        | R.Shayanthan        |
+| 5.1 |  02.03.2023     |   
+
+Uploading T5.mp4…
+
+       |   R.Shayanthan      |
+| 6.1  | 02.03.2023      |          |  R.Shayanthan       |
+| 7.1  | 02.03.2023      |   NOK       |  R.Shayanthan       |
 
 
 ✍️ Vergessen Sie nicht, ein Fazit hinzuzufügen, welches das Test-Ergebnis einordnet.
