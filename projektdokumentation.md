@@ -18,8 +18,6 @@ Das Projekt ist die Entwicklung einer Webbapplikation, die eine abgewandelte Ver
 
 # 1 Analyse
 
-✍️ Beschreiben Sie, auf welchem Tier Sie die dynamischen Elemente der Anwendung unterbringen möchten:
-
 * Tier 1 (Presentation): Benutzerinterfaces
 * Tier 2 (Webserver): Sendungen der verschiedenen Aktionen vom Benutzer
 * Tier 3 (Application Server): Herstellung der Verbindung mit der Datenbank, Datenbankanfragen Durchführung 
@@ -147,6 +145,7 @@ Link zu den Testfällen: https://youtu.be/K6zBTvL5u70
 | A.1 |  02.03.2023     |  OK |  R.Shayanthan       |
 | 4.1  | 02.03.2023      |  OK | R.Shayanthan        |
 | 5.1 |  02.03.2023     |   OK  |   R.Shayanthan      |
+| B.1 |  02.03.2023     |   NOK  |   R.Shayanthan      |
 | 6.1  | 02.03.2023      |     OK     |  R.Shayanthan       |
 | 7.1  | 02.03.2023      |   NOK       |  R.Shayanthan       |
 
