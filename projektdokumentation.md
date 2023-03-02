@@ -9,12 +9,12 @@ Ravindran
 | 16.02.2023     | 0.0.3   |  Heute habe ich nach den Spielfunktionen recherchiert.                         |
 | 23.02.2023      | 0.0.4   | Heute habe ich die allgemeine Spielfunktion implementiert.                    |
 | 24.02.2023     | 0.0.5   | Heute habe ich versucht die Seite für die Highscore-List zu implementieren.    |
-| 28.02.2023      | 0.0.6   | Heute habe ich die nötigen Verbesserungen im Code gemacht.                                                             |
-
+| 28.02.2023      | 0.0.6   | Heute habe ich die nötigen Verbesserungen im Code gemacht.       |
+| 02.03.2023      | 0.0.7   | Heute habe ich meine Projekt-Dokumentation fertiggestellt.      |
 
 # 0 Ihr Projekt
 
-Das Projekt ist die Entwicklung einer Webbapplikation, die eine abgewandelte Version des Glücksrad-Spiels darstellt, bei dem der Spieler Wörter oder Redewendungen in einem Gitter erraten muss, wobei Satzzeichen und Ziffern bereits vorgegeben sind. 
+Das Projekt ist die Entwicklung einer Webbapplikation, die eine abgewandelte Version des Glücksrad-Spiels darstellt, bei dem der Spieler Wörter in einem Gitter erraten muss, wobei die Anzahl Lücken vorgegeben sind.
 
 # 1 Analyse
 
@@ -39,7 +39,7 @@ Wie ist das Interface aufgebaut?
 Diese Seite würde dem Administrator ermöglichen, sich durch die Eingabe von Benutzername und Passwort zu authentifizieren.
 
 2.) Administration-Seite: 
-Diese Seite würde dem Administrator ermöglichen, Phrasen und Rätselwörter zu erstellen, zu bearbeiten und zu löschen, Kategorien zu erstellen und Rätsel einer Kategorie zuzuordnen.
+Diese Seite würde dem Administrator ermöglichen, Rätselwörter zu erstellen, zu bearbeiten und zu löschen, Kategorien zu erstellen und Rätsel einer Kategorie zuzuordnen.
 
 3.) Spiel-Seite: 
 Diese Seite würde dem Benutzer ermöglichen: das Spiel zu starten und Buchstaben in den Lücken zu raten, den Kontostand und die Lebenspunkte anzuzeigen, seinen Namen einzugeben und das Rätsel zu lösen.
@@ -48,14 +48,10 @@ Diese Seite würde dem Benutzer ermöglichen: das Spiel zu starten und Buchstabe
 
 # 4.1 User Stories
 
-✍️ Formulieren Sie klare Anforderungen in der Form von User Stories (*„als … möchte ich … damit …“*) und zu jeder Anforderung mindestens einen dazugehörigen Testfall (in Kapitel 4.2). 
-
-✍️ Formulieren Sie weitere, eigene Anforderungen und Testfälle, wie Sie Ihre Applikation erweitern möchten. Geben Sie diesen statt einer Nummer einen Buchstaben (`A`, `B`, etc.)
-
 | US-№ | Verbindlichkeit | Typ  | Beschreibung                                                                                                              |
 | ---- | --------------- | ---- | ----------------------------------                                                                                        |
 | 1    |     Muss            | Funktional  | Als ein Administrator möchte ich mich durch Benutzername und Passwort authentifizieren können, damit ich Zugriff auf                                          die Administrationstools habe.                                                                                     |
-| 2    |     Muss            | Funktional     | Als ein Administrator möchte ich Rätselwörter und Phrasen anlegen, ändern und löschen können, damit ich das Spiel jederzeit                                   aktualisieren kann.                                                                                                      |
+| 2    |     Muss            | Funktional     | Als ein Administrator möchte ich Rätselwörter anlegen, ändern und löschen können, damit ich das Spiel jederzeit                                   aktualisieren kann.                                                                                                      |
 | 3    |        Kann         | Funktional     | Als ein Administrator möchte ich Kategorien anlegen und Rätselwörter einer Kategorie zuordnen können, damit ich die                                           Rätselwörter organisieren kann.                                                                              |
 | 4    |     Muss            | Funktional      | Als ein Kandidat möchte ich einen Buchstaben eingeben können, damit ich das richtige Wort erraten kann.                                                                                                |
 | A    |      Muss           | Funktional      | Als ein Kandidat möchte ich bereits jeden erratenen Buchtsaben sehen können, damit ich meinen Fortschritt im Spiel verfolgen kann.                                                                                                    |
@@ -77,13 +73,13 @@ Diese Seite würde dem Benutzer ermöglichen: das Spiel zu starten und Buchstabe
 | TC-№ | Vorbereitung | Eingabe | Erwartete Ausgabe |
 | ---- | ------------ | ------- | ----------------- |
 | 1.1  |  Applikation ist gestartet.|  1.) Startseite geöffnet <br> 2.) Eingabe in den Login-Feldern       |   Weiterleitung zur nächsten Seite                |
-| 2.1  |   Applikation ist gestartet          |  1.) Startseite geöffnet. <br> 2.) Anmelden <br> 3.) Navigaton -> *Spiel* wählen <br> 3.) Spiel starten   | Spiel wird gestartet|
-| 3.1  |  Applikation ist gestartet|  1.) Startseite geöffnet <br> 2.) Anmelden <br> 3.) Navigaton -> *Spiel* wählen <br>  4.) auf Button "Starten" klicken <br> 5.) einen richtigen Buchstaben raten bzw. im Eingabefeld eingeben   | In der Lücke wird der richtige Buchstabe angezeigt.|
-| A.1  |  Applikation ist gestartet   | 1.) Startseite geöffnet <br> 2.) Anmelden <br> 3.) Navigaton -> *Spiel* wählen <br> 4.) auf Button "Starten" klicken  <br> 5.) ein zufälliger Buchstabe wird eingegeben | Unter den Lücken erscheinen, die bereits eingegeben Buchstaben.       |
-| 4.1  |  Applikation ist gestartet   | 1.) Startseite geöffnet <br> 2.) Anmelden <br> 3.) Navigaton -> *Spiel* wählen <br> 4.) auf Button "Starten" klicken  <br> 5.) ein bereits eingegebener Buchstabe wird eingegeben | Es erscheint eine Meldung, dass der gleiche Buchstabe eingegeben wurde.      |
-| 5.1  |    Applikation ist gestartet   | 1.) Startseite geöffnet <br> 2.) Anmelden <br> 3.) Navigaton -> *Spiel* wählen <br> 4.) auf Button "Starten" klicken  <br> 5.) alle Buchstaben werden korrekt eingegeben | Es erscheint eine Meldung, wobei der Spieler gratuliert wird für das richtig erratene Wort.|
-| 6.1  |  Applikation ist gestartet   | 1.) Startseite geöffnet <br> 2.) Anmelden <br> 3.) Navigaton -> *Spiel* wählen <br> 4.) auf Button "Starten" klicken  <br> 5.) mehr als 7 Versuche werden betätigt | Es erscheint eine Meldung, dass der Spieler, leider das Wort nicht erraten hat und das Spiel wird dann beendet.  |
-| 7.1  |  Applikation ist gestartet   | 1.) Startseite geöffnet <br> 2.) Spieler meldet sich an <br> 3.)Navigaton -> *Highscoreliste* wählen <br> 4.) Liste sichtbar <br> 5.) mehr  | Der Spieler wird auf eine andere Seite weitergleitet, wobei er die Highscoreliste sehen kann. |
+| 2.1  |   Applikation ist gestartet          |  1.) Startseite geöffnet. <br> 2.) Anmelden <br> 3.) Navigation -> *Spiel* wählen <br> 3.) Spiel starten   | Spiel wird gestartet|
+| 3.1  |  Applikation ist gestartet|  1.) Startseite geöffnet <br> 2.) Anmelden <br> 3.) Navigation -> *Spiel* wählen <br>  4.) auf Button "Starten" klicken <br> 5.) einen richtigen Buchstaben raten bzw. im Eingabefeld eingeben   | In der Lücke wird der richtige Buchstabe angezeigt.|
+| A.1  |  Applikation ist gestartet   | 1.) Startseite geöffnet <br> 2.) Anmelden <br> 3.) Navigation -> *Spiel* wählen <br> 4.) auf Button "Starten" klicken  <br> 5.) ein zufälliger Buchstabe wird eingegeben | Unter den Lücken erscheinen, die bereits eingegeben Buchstaben.       |
+| 4.1  |  Applikation ist gestartet   | 1.) Startseite geöffnet <br> 2.) Anmelden <br> 3.) Navigation -> *Spiel* wählen <br> 4.) auf Button "Starten" klicken  <br> 5.) ein bereits eingegebener Buchstabe wird eingegeben | Es erscheint eine Meldung, dass der gleiche Buchstabe eingegeben wurde.      |
+| 5.1  |    Applikation ist gestartet   | 1.) Startseite geöffnet <br> 2.) Anmelden <br> 3.) Navigation -> *Spiel* wählen <br> 4.) auf Button "Starten" klicken  <br> 5.) alle Buchstaben werden korrekt eingegeben | Es erscheint eine Meldung, wobei der Spieler gratuliert wird für das richtig erratene Wort.|
+| 6.1  |  Applikation ist gestartet   | 1.) Startseite geöffnet <br> 2.) Anmelden <br> 3.) Navigation -> *Spiel* wählen <br> 4.) auf Button "Starten" klicken  <br> 5.) mehr als 7 Versuche werden betätigt | Es erscheint eine Meldung, dass der Spieler, leider das Wort nicht erraten hat und das Spiel wird dann beendet.  |
+| 7.1  |  Applikation ist gestartet   | 1.) Startseite geöffnet <br> 2.) Spieler meldet sich an <br> 3.)Navigation -> *Highscoreliste* wählen <br> 4.) Liste sichtbar <br> 5.) mehr  | Der Spieler wird auf eine andere Seite weitergleitet, wobei er die Highscoreliste sehen kann. |
 
 
 
@@ -101,19 +97,18 @@ Admin-Screen: <br>
 
 # 6 Implementation
 
-✍️ Halten Sie fest, wann Sie welche User Story bearbeitet haben
 
 | User Story | Datum | Beschreibung |
 | ---------- | ----- | ------------ |
 | 1.1  |  13.02.2023     | Nicht erledigt, aufgrund einiger Problemen im Code.   |        |
 | 2.1 |    15.02.2023   |   Nicht erledigt, aufrgund des Aufwands in der FireBase.   |        |
 | 3.1  |   15.02.2023    | Nicht erledigt. Es konnte nur eine Kategorie angelegt werden.  |        |
-| 4.1 |  23.02.2023     |    erledigt.      |        |
-| A.1  |  23.02.2023      |    erledigt.   |        |
-| 5.1 |  23.02.2023      |  erledigt.  |        |
+| 4.1 |  23.02.2023     |    Erledigt.      |        |
+| A.1  |  23.02.2023      |    Erledigt.   |        |
+| 5.1 |  23.02.2023      |  Erledigt.  |        |
 | B.1  | 24.02.2023       |    Nicht erledigt.    |        |
 | 6.1 |    24.02.2023   |    Nicht. erledigt, aufgrund des Zeitaufwands in der Spielfunktion.     |        |
-| 7.1  |  28.02.2023     |     teilweise erledigt. Es kann nur neugestartet werden, wenn das Spiel fertig gespielt wurde.  |        |
+| 7.1  |  28.02.2023     |     Teilweise erledigt. Es kann nur neugestartet werden, wenn das Spiel fertig gespielt wurde.  |        |
 
 
 
@@ -122,7 +117,7 @@ Admin-Screen: <br>
 | US-№ | Erledigt? | Entsprechende Code-Dateien oder Erklärung |
 | ---- | --------- | ----------------------------------------- |
 | 1.1    | nein |   script2.js   |
-| 2.1  |    nein   |    Aufgrund des Zeitaufwands für die erste UserStory, konnte ich es nicht schaffen.          |
+| 2.1  |    nein   |    Aufgrund des Zeitaufwands für die erste User Story, konnte ich es nicht schaffen.          |
 | 3.1    | nein |      Ich konnte nur eine Kategorie anlegen. Bei den anderen Kategorien kam es zu Problemen im Code.                                  |
 | 4.1  |      ja    |       script.js  und spiel.html                          |
 | A.1    | ja |            script.js und spiel.html                       |
@@ -151,14 +146,14 @@ Link zu den Testfällen: https://youtu.be/K6zBTvL5u70
 
 
 Fazit: 
-Im Allgmeinen haben die meisten Testfälle bestanden. Wenn man aber die Userstorys mit einbezieht, dann haben mehr als die Hälfte nicht bestanden. Nächstes mal sollten alle Anforderungen konkreter beachtet werden.
+Im Allgmeinen haben die meisten Testfälle bestanden. Wenn man aber die User Storys mit einbezieht, dann haben mehr als die Hälfte nicht bestanden. Nächstes mal sollten alle Anforderungen konkreter beachtet werden.
 
 # 9 `README.md`
 
-✍️ Beschreiben Sie ausführlich in einer README.md, wie Ihre Applikation gestartet und ausgeführt wird. Legen Sie eine geeignete Möglichkeit (Skript, Export, …) bei, Ihre Datenbank wiederherzustellen.
+Ich habe im allgemeinen die Einrichtungen zu meiner Applikation in der README.md ausführlich beschrieben. Dazu habe ich auch eine geeignete Möglichkeit zur Wiederherstellung der Datenbank geschrieben. 
 
 # 10 Allgemeines
 
-- [ ] Ich habe die Rechtschreibung überprüft
-- [ ] Ich habe überprüft, dass die Nummerierung von Testfällen und User Stories übereinstimmen
-- [ ] Ich habe alle mit ✍️ markierten Teile ersetzt
+- [x] Ich habe die Rechtschreibung überprüft
+- [x] Ich habe überprüft, dass die Nummerierung von Testfällen und User Stories übereinstimmen
+- [x] Ich habe alle mit ✍️ markierten Teile ersetzt
