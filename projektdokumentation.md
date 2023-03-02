@@ -83,7 +83,7 @@ Diese Seite würde dem Benutzer ermöglichen: das Spiel zu starten und Buchstabe
 | A.1  |  Applikation ist gestartet   | 1.) Startseite geöffnet <br> 2.) Anmelden <br> 3.) Navigaton -> *Spiel* wählen <br> 4.) auf Button "Starten" klicken  <br> 5.) ein zufälliger Buchstabe wird eingegeben | Unter den Lücken erscheinen, die bereits eingegeben Buchstaben.       |
 | 4.1  |  Applikation ist gestartet   | 1.) Startseite geöffnet <br> 2.) Anmelden <br> 3.) Navigaton -> *Spiel* wählen <br> 4.) auf Button "Starten" klicken  <br> 5.) ein bereits eingegebener Buchstabe wird eingegeben | Es erscheint eine Meldung, dass der gleiche Buchstabe eingegeben wurde.      |
 | 5.1  |    Applikation ist gestartet   | 1.) Startseite geöffnet <br> 2.) Anmelden <br> 3.) Navigaton -> *Spiel* wählen <br> 4.) auf Button "Starten" klicken  <br> 5.) alle Buchstaben werden korrekt eingegeben | Es erscheint eine Meldung, wobei der Spieler gratuliert wird für das richtig erratene Wort.|
-| 6.1  |  Applikation ist gestartet   | 1.) Startseite geöffnet <br> 2.) Anmelden <br> 3.) Navigaton -> *Spiel* wählen <br> 4.) auf Button "Starten" klicken  <br> 5.) mehr als 6 Versuche werden betätigt | Es erscheint eine Meldung, dass der Spieler, leider das Wort nicht erraten hat und das Spiel wird dann beendet.  |
+| 6.1  |  Applikation ist gestartet   | 1.) Startseite geöffnet <br> 2.) Anmelden <br> 3.) Navigaton -> *Spiel* wählen <br> 4.) auf Button "Starten" klicken  <br> 5.) mehr als 7 Versuche werden betätigt | Es erscheint eine Meldung, dass der Spieler, leider das Wort nicht erraten hat und das Spiel wird dann beendet.  |
 | 7.1  |  Applikation ist gestartet   | 1.) Startseite geöffnet <br> 2.) Spieler meldet sich an  | Der Spieler wird auf eine andere Seite weitergleitet. |
 
 
