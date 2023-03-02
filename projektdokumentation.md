@@ -106,15 +106,15 @@ Admin-Screen: <br>
 
 | User Story | Datum | Beschreibung |
 | ---------- | ----- | ------------ |
-| 1.1  |  13.02.2023     |          |        |
-| 2.1 |    15.02.2023   |          |        |
-| 3.1  |   15.02.2023    |          |        |
-| 4.1 |  23.02.2023     |          |        |
-| A.1  |  23.02.2023      |          |        |
-| 5.1 |  23.02.2023      |          |        |
-| B.1  | 24.02.2023       |          |        |
-| 6.1 |    24.02.2023   |          |        |
-| 7.1  |  28.02.2023     |          |        |
+| 1.1  |  13.02.2023     | Nicht erledigt, aufgrund einiger Problemen im Code.   |        |
+| 2.1 |    15.02.2023   |   Nicht erledigt, aufrgund des Aufwands in der FireBase.   |        |
+| 3.1  |   15.02.2023    | Nicht erledigt. Es konnte nur eine Kategorie angelegt werden.  |        |
+| 4.1 |  23.02.2023     |    erledigt.      |        |
+| A.1  |  23.02.2023      |    erledigt.   |        |
+| 5.1 |  23.02.2023      |  erledigt.  |        |
+| B.1  | 24.02.2023       |    Nicht erledigt.    |        |
+| 6.1 |    24.02.2023   |    Nicht. erledigt, aufgrund des Zeitaufwands in der Spielfunktion.     |        |
+| 7.1  |  28.02.2023     |     teilweise erledigt. Es kann nur neugestartet werden, wenn das Spiel fertig gespielt wurde.  |        |
 
 
 
@@ -122,8 +122,16 @@ Admin-Screen: <br>
 
 | US-№ | Erledigt? | Entsprechende Code-Dateien oder Erklärung |
 | ---- | --------- | ----------------------------------------- |
-| 1    | ja / nein |                                           |
-| ...  |           |                                           |
+| 1.1    | nein |       |
+| 2.1  |    nein   |    Aufgrund des Zeitaufwands für die erste UserStory, konnte ich es nicht schaffen.          |
+| 3.1    | nein |      Ich konnte nur eine Kategorie anlegen. Bei den anderen Kategorien kam es zu Problemen im Code.                                  |
+| 4.1  |      ja    |                                      |
+| A.1    | ja |                                    |
+| 5.1  |     ja      |                                     |
+| B.1    | nein |      Aufgrund des Zeitaufwands für die Spielfunktion, konnte ich nicht dazu kommen.                                      |
+| 6.1  |      nein     |       Die ganze Highscore-List konnte nicht implementiert werden, aufgrund des Problems mit den Lebenspunkten.                                    |
+| 7.1    | nein |    Die Funktion für diese ist grundsätzlich einfach, aber ich hing noch an der FireBase fest.                                       |
+
 
 # 8 Testprotokoll
 
