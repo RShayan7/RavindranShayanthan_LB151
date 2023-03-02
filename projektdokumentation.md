@@ -5,12 +5,12 @@ Ravindran
 | Datum | Version | Zusammenfassung                                              |
 | ----- | ------- | ------------------------------------------------------------ |
 | 09.02.2023      | 0.0.1   | Heute habe ich die Navbar implementiert. |
-| 12.02.2023      | 0.0.2   | Heute habe ich versucht das Login mit der Firebase zu verknüpfen.                                                             |
-| 16.02.2023     | 0.0.3   |  Heute habe ich nach den Spielfunktionen recherchiert.                                                            |
-|       | 0.0.4   |                                                              |
-|       | 0.0.5   |                                                              |
-|       | 0.0.6   |                                                              |
-|       | 1.0.0   |                                                              |
+| 12.02.2023      | 0.0.2   | Heute habe ich versucht das Login mit der Firebase zu verknüpfen.      |
+| 16.02.2023     | 0.0.3   |  Heute habe ich nach den Spielfunktionen recherchiert.                         |
+| 23.02.2023      | 0.0.4   | Heute habe ich die allgemeine Spielfunktion implementiert.                    |
+| 24.02.2023     | 0.0.5   | Heute habe ich versucht die Seite für die Highscore-List zu implementieren.    |
+| 28.02.2023      | 0.0.6   | Heute habe ich die nötigen Verbesserungen im Code gemacht.                                                             |
+
 
 # 0 Ihr Projekt
 
@@ -27,13 +27,13 @@ Das Projekt ist die Entwicklung einer Webbapplikation, die eine abgewandelte Ver
 
 # 2 Technologie
 
-Ich verwende ich das Framework React.js.
+Ich verwende für das Spiel die Technologien HTML, CSS und JavaScript und verwende dazu eine Firebase für die Authentifizierung und Datenbankverwaltung.
 
 # 3 Datenbank
 
 Wie steuern Sie Ihre Datenbank an?
 
-Die Datenbank wird mithilfe der Middleware wie Express.js gesteuert, um die Datenbankanfragen von der React-Anwendung aus auszuführen. Diese Middleware kann verwendet werden, um Anfragen von der React-Anwendung zu empfangen und sie an die Datenbank weiterzuleiten, die Ergebnisse zurückzugeben und sie an die React-Anwendung zurückzusenden.
+Für die Datenbankverwaltung werde ich Firebase verwenden, den Sie bietet eine Echtzeit-Datenbank, die in Echtzeit mit anderen Benutzern synchronisiert werden kann und somit für Mehrspieler-Online-Spiele geeignet ist. Sie bietet auch eine einfache Möglichkeit, eine Datenbankverbindung zu erstellen und Daten zu speichern und abzurufen und eine JavaScript-Bibliothek, die in das Spiel eingebunden werden kann und die Verbindung mit der Firebase-Datenbank ermöglicht. Im Spiel können die Benutzerdaten, wie Benutzername und Passwort, in der Firebase-Datenbank gespeichert werden. Die bereits eingegebenen Buchstaben können ebenfalls in der Datenbank gespeichert werden, um sicherzustellen, dass der gleiche Buchstabe nicht erneut eingegeben wird. Wenn der Benutzer das richtige Wort erraten hat, kann auch eine Bestenliste in der Firebase-Datenbank gespeichert werden, um die besten Spieler und ihre Punktzahl zu verfolgen.
 
 Wie ist das Interface aufgebaut? 
 
@@ -44,7 +44,7 @@ Diese Seite würde dem Administrator ermöglichen, sich durch die Eingabe von Be
 Diese Seite würde dem Administrator ermöglichen, Phrasen und Rätselwörter zu erstellen, zu bearbeiten und zu löschen, Kategorien zu erstellen und Rätsel einer Kategorie zuzuordnen.
 
 3.) Spiel-Seite: 
-Diese Seite würde dem Benutzer ermöglichen, das Glücksrad zu drehen, Buchstaben auf der Rate-Wand zu raten, den Kontostand und die Lebenspunkte anzuzeigen, seinen Namen einzugeben und das Rätsel zu lösen.
+Diese Seite würde dem Benutzer ermöglichen: das Spiel zu starten und Buchstaben in den Lücken zu raten, den Kontostand und die Lebenspunkte anzuzeigen, seinen Namen einzugeben und das Rätsel zu lösen.
 
 4.) Highscore-Seite: Diese Seite würde eine Liste der Highscores anzeigen, sortiert nach Rang, der durch die Höhe des Geldbetrags bestimmt wird, die Rang, Name des Spielers, Zeitpunkt des Spiels, Geldbetrag und Anzahl der Spielrunden enthalten. Es würde auch ermöglichen, einzelne Einträge der Highscore-Liste von Administratoren zu löschen.
 
@@ -59,14 +59,13 @@ Diese Seite würde dem Benutzer ermöglichen, das Glücksrad zu drehen, Buchstab
 | 1    |     Muss            | Funktional  | Als ein Administrator möchte ich mich durch Benutzername und Passwort authentifizieren können, damit ich Zugriff auf                                          die Administrationstools habe.                                                                                     |
 | 2    |     Muss            | Funktional     | Als ein Administrator möchte ich Rätselwörter und Phrasen anlegen, ändern und löschen können, damit ich das Spiel jederzeit                                   aktualisieren kann.                                                                                                      |
 | 3    |        Kann         | Funktional     | Als ein Administrator möchte ich Kategorien anlegen und Rätselwörter einer Kategorie zuordnen können, damit ich die                                           Rätselwörter organisieren kann.                                                                              |
-| 4    |     Muss            | Funktional      | Als ein Kandidat möchte ich meinen Namen eingeben können, damit ich auf der Highscore-Liste erscheine.                                                                                                |
-| 5    |      Muss           | Funktional      | Als ein Kandidat möchte ich meinen Kontostand zu jeder Zeit sehen können, damit ich meinen Fortschritt im Spiel verfolgen kann.                                                                                                    |
-| 6    |      Muss           | Funktional     | Als ein Kandidat möchte ich meine Lebenspunkte können, damit ich meinen Fortschritt im Spiel verfolgen kann.                                                                                                |
-| A    |      Kann           | Qualität     | Als ein Kandidat möchte ich die Veränderungen meiner Lebenspunkte sehen können, damit ich meinen Fortschritt im Spiel verfolgen kann.                                                                                                |
-| B    |      Kann           | Qualität     |  Als ein Kandidat möchte ich die Farbe im Spiel ändern können, damit die Übersichtlichkeit und Wohl-Gefühl angenehm ist.                                                              |
-| 8    |    Muss             | Funktional     | Als ein Kandidat möchte ich eine aufsteigend sortierte Highscore-Liste sehen, die Rang, Name, Zeitpunkt, Geldbetrag und Anzahl der Spielrunden enthält, damit ich meine Leistung im Vergleich zu anderen Spielern einschätzen kann.                        |
-| 9    |      Muss           | Funktional     | Als ein Kandidat möchte ich jederzeit die Möglichkeit haben, entweder weiterzuspielen oder das Spiel zu beenden und meinen Gewinn in die Highscore-Liste zu übernehmen, damit ich flexibel entscheiden kann, wann ich meinen Erfolg teilen möchte.                              |
-| 10    |    Muss             | Rand     | Als ein Kandidat möchte ich die Anzahl meiner Spielrunden gezählt wissen, damit ich meine Leistung im Spiel einschätzen kann.  |
+| 4    |     Muss            | Funktional      | Als ein Kandidat möchte ich einen Buchstaben eingeben können, damit ich das richtige Wort erraten kann.                                                                                                |
+| A    |      Muss           | Funktional      | Als ein Kandidat möchte ich bereits jeden erratenen Buchtsaben sehen können, damit ich meinen Fortschritt im Spiel verfolgen kann.                                                                                                    |
+| 5    |      Muss           | Funktional     | Als ein Kandidat möchte ich benachrichtigt werden sollen bei richtigen erratenen Wort, damit ich keine Fehler mache.                                                                                             |
+| B    |      Kann           | Qualität     | Als ein Kandidat möchte ich die Veränderungen meiner Lebenspunkte sehen können, damit ich meinen Fortschritt im Spiel verfolgen kann.                                                                           |
+| 6   |    Muss             | Funktional     | Als ein Kandidat möchte ich eine aufsteigend sortierte Highscore-Liste sehen, die Rang, Name, Zeitpunkt, Geldbetrag und Anzahl der Spielrunden enthält, damit ich meine Leistung im Vergleich zu anderen Spielern einschätzen kann.                        |
+| 7    |      Muss           | Funktional     | Als ein Kandidat möchte ich jederzeit die Möglichkeit haben, das Spiel neuzustarten, damit ich flexibel entscheiden kann.|
+
 
 
 
@@ -79,16 +78,15 @@ Diese Seite würde dem Benutzer ermöglichen, das Glücksrad zu drehen, Buchstab
 | TC-№ | Vorbereitung | Eingabe | Erwartete Ausgabe |
 | ---- | ------------ | ------- | ----------------- |
 | 1.1  |  Applikation ist gestartet.|  1.) Startseite geöffnet <br> 2.) Eingabe in den Login-Feldern       |   Weiterleitung zur nächsten Seite                |
-| 2.1  |   Applikation ist gestartet          |  1.) Startseite geöffnet. <br> 2.) Anmelden <br> 3.) Navigaton -> *Rätselwort* wählen <br> 3.) Bestehende Rätselwörter auswählen und löschen/erstellen.      |       Rätselwor wird gelöscht und es wurde ein neues Rätselwort erstellt.            |
-| 3.1  |  Applikation ist gestartet|  1.) Startseite geöffnet <br> 2.) Anmelden <br> 3.) Navigaton -> *Kategorien* wählen <br>  4.) bestehende Rätselwörter auswählen und auf Button "verschieben" klicken und Kateogrie auswählen.  |     Rätselwort wird der gewünschten Kategorie ausgewählt.   |
-| 4.1  |  Applikation ist gestartet   | 1.) Startseite geöffnet <br> 2.) Anmelden <br> 3.) Navigaton -> *Spiel* wählen <br> 4.) Spiel spielen <br> 5.) Benutzer wird gefragt, nach Name, damit dies in der Highscore-List eingetragen wird. <br> 6.) Benutzer gibt Name ein.        | Der Eingegebene Name schein inder Highscore-List.        |
-| 5.1  |  Applikation ist gestartet|  1.) Startseite geöffnet <br> 2.) Anmelden <br> 3.) Navigaton -> *Spiel* wählen <br> 4.) Spiel spielen <br> 5.) Während dem Spiel sieht der Benutzer oben rechts, sein Kontostand.       | Benutzer kann während dem Spiel oben rechts sein Kontostand sehen.               |
-| 6.1  |   Applikation ist gestartet  |1.) Startseite geöffnet <br> 2.) Anmelden <br> 3.) Navigaton -> *Spiel* wählen <br> 4.) Spiel spielen  | Benutzer kann während dem Spiel oben rechts seine Lebenspunkte sehen.      |
-| A.1  |  Applikation ist gestartet|1.) Startseite geöffnet <br> 2.) Anmelden <br> 3.) Navigaton -> *Spiel* wählen <br> 4.) Spiel spielen      | Benutzer kann während dem Spiel seine Lebenspunkte ändern sehen, welche sich bei Verlust oder Gewinn immer ändern.     |
-| B.1  | Applikation ist gestartet|1.) Startseite geöffnet <br> 2.) Anmelden <br> 3.) Navigaton -> *Einstellung* wählen <br> 4.) Farbe auswählen->für den Hintergrund|    Ausgewählte Farbe erscheint im Hintergrund         |
-| 8.1  | Applikation ist gestartet   | 1.) Startseite geöffnet <br> 2.) Anmelden <br> 3.) Navigaton -> *Spiel* wählen <br> 4.) Highscore-List rechts sichtbar <br> 5.) Unter Highscore-List Klick auf Button "aufsteigend sortieren"           |         Highscore-List wird aufsteigend sortiert.          |
-| 9.1  |  Applikation ist gestartet| 1.) Startseite geöffnet <br> 2.) Anmelden <br> 3.) Navigaton -> *Spiel* wählen <br> 4.) Spiel spielen <br> 5.) Wenn das Spiel kann unter rechts, bei Klick auf Button "Spiel neu starten" oder "Spiel beenden"        | Bei Klick auf neu starten wird das Spiel neu geladen. Bei Klick auf beenden wird man auf die auf die Home-Seite weitergeleitet.                  |
-| 10.1  |   Applikation ist gestartet    |  1.) Startseite geöffnet <br> 2.) Anmelden <br> 3.) Navigaton -> *Spiel* wählen <br> 4.) Spiel spielen       | Bei jeder Runde wird die Anzahl-Runden oben links angezeigt, auch während dem Spielen.                  |
+| 2.1  |   Applikation ist gestartet          |  1.) Startseite geöffnet. <br> 2.) Anmelden <br> 3.) Navigaton -> *Spiel* wählen <br> 3.) Spiel starten   | Spiel wird gestartet|
+| 3.1  |  Applikation ist gestartet|  1.) Startseite geöffnet <br> 2.) Anmelden <br> 3.) Navigaton -> *Spiel* wählen <br>  4.) auf Button "Starten" klicken <br> 5.) einen richtigen Buchstaben raten bzw. im Eingabefeld eingeben   | In der Lücke wird der richtige Buchstabe angezeigt.|
+| A.1  |  Applikation ist gestartet   | 1.) Startseite geöffnet <br> 2.) Anmelden <br> 3.) Navigaton -> *Spiel* wählen <br> 4.) auf Button "Starten" klicken  <br> 5.) ein zufälliger Buchstabe wird eingegeben | Unter den Lücken erscheinen, die bereits eingegeben Buchstaben.       |
+| 4.1  |  Applikation ist gestartet   | 1.) Startseite geöffnet <br> 2.) Anmelden <br> 3.) Navigaton -> *Spiel* wählen <br> 4.) auf Button "Starten" klicken  <br> 5.) ein bereits eingegebener Buchstabe wird eingegeben | Es erscheint eine Meldung, dass der gleiche Buchstabe eingegeben wurde.      |
+| 5.1  |    Applikation ist gestartet   | 1.) Startseite geöffnet <br> 2.) Anmelden <br> 3.) Navigaton -> *Spiel* wählen <br> 4.) auf Button "Starten" klicken  <br> 5.) alle Buchstaben werden korrekt eingegeben | Es erscheint eine Meldung, wobei der Spieler gratuliert wird für das richtig erratene Wort.|
+| 6.1  |  Applikation ist gestartet   | 1.) Startseite geöffnet <br> 2.) Anmelden <br> 3.) Navigaton -> *Spiel* wählen <br> 4.) auf Button "Starten" klicken  <br> 5.) mehr als 6 Versuche werden betätigt | Es erscheint eine Meldung, dass der Spieler, leider das Wort nicht erraten hat und das Spiel wird dann beendet.  |
+| 7.1  |  Applikation ist gestartet   | 1.) Startseite geöffnet <br> 2.) Spieler meldet sich an  | Der Spieler wird auf eine andere Seite weitergleitet. |
+
+
 
 
 
@@ -108,7 +106,17 @@ Admin-Screen: <br>
 
 | User Story | Datum | Beschreibung |
 | ---------- | ----- | ------------ |
-| ...        |       |              |
+| 1.1  |  13.02.2023     |          |        |
+| 2.1 |    15.02.2023   |          |        |
+| 3.1  |   15.02.2023    |          |        |
+| 4.1 |  23.02.2023     |          |        |
+| A.1  |  23.02.2023      |          |        |
+| 5.1 |  23.02.2023      |          |        |
+| B.1  | 24.02.2023       |          |        |
+| 6.1 |    24.02.2023   |          |        |
+| 7.1  |  28.02.2023     |          |        |
+
+
 
 # 7 Projektdokumentation
 
@@ -124,7 +132,7 @@ Admin-Screen: <br>
 | TC-№ | Datum | Resultat | Tester |
 | ---- | ----- | -------- | ------ |
 | 1.1  |       |          |        |
-| ...  |       |          |        |
+| 2.1 |       |          |        |
 
 ✍️ Vergessen Sie nicht, ein Fazit hinzuzufügen, welches das Test-Ergebnis einordnet.
 
