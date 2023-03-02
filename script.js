@@ -1,5 +1,8 @@
+
+
+
 // Array mit den Wörtern, aus denen ein zufälliges Wort ausgewählt wird
-const words = ['Ronaldo', 'Messi', 'Benzema', 'Maradona', 'Neuer', 'Beckham', 'Buffon', 'Toni Kroos', 'Lewandowski', 'Neymar','Reus', 'Pogba' ];
+const words = ['Ronaldo', 'Messi', 'Benzema', 'Maradona', 'Neuer', 'Beckham', 'Buffon', 'Kroos', 'Lewandowski', 'Neymar','Reuss', 'Pogba' ];
 
 // Maximale Anzahl von Versuchen
 const maxGuesses = 6;
@@ -87,6 +90,7 @@ function makeGuess() {
       guessInput.value = '';
       return;
     }
+    
   
     // Füge den Buchstaben zur Liste der geratenen Buchstaben hinzu
     guessedLetters.push(guess);
@@ -147,4 +151,6 @@ function makeGuess() {
     }
     totalPrizeDiv.textContent = `Gesamtgewinn: ${totalPrize}`;
   }
+
+  
   

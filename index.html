@@ -1,31 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Firebase Signup Form</title>
+  <meta charset="utf-8">
+  <title>Login</title>
+  <link rel="stylesheet" href="style4.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Sign Up</h1>
-        <form onsubmit="signup(event)">
-        <div>
-            <input type="text" name="" id="firstname" placeholder="First name">
-        </div>
-        <div>
-            <input type="text" name="" id="lastname" placeholder="Last name">
-        </div>
-        <div>
-            <input type="text" name="" id="email" placeholder="Email">
-        </div>
-        <div>
-            <input type="password" name="" id="password" placeholder="Password">
-        </div>
-        <button id="signupinp" value="Sign up">Sign Up</button>
-
+  <div class="login-container">
+    <h1>Login</h1>
+    <form id="login-form" class="login-form" action="homescreen.html">
+      <div class="form-control">
+        <label for="email">E-Mail:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-control">
+        <label for="password">Passwort:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <button type="submit">Anmelden</button>
+      <div class="form-separator">oder</div>
+      <button id="register-button" type="button">Registrieren</button>
     </form>
-    </div>
+    <form id="register-form" class="register-form" style="display: none;">
+      <div class="form-control">
+        <label for="register-email">E-Mail:</label>
+        <input type="email" id="register-email" name="email" required>
+      </div>
+      <div class="form-control">
+        <label for="register-password">Passwort:</label>
+        <input type="password" id="register-password" name="password" required>
+      </div>
+      <button type="submit">Registrieren</button>
+      <div class="form-separator">oder</div>
+      <button id="login-button" type="button">Anmelden</button>
+    </form>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js"></script>
+  <script src="script2.js"></script>
 </body>
-<script src="script.js" type="module"></script>
 </html>

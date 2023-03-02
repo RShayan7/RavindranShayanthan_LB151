@@ -121,7 +121,7 @@
   body {
     font-family: Arial, sans-serif;
     margin: 0;
-    background: url("bg2.jpg") ;
+    background: url("bg.jpg");
     background-size: 100%;
   }
   
@@ -133,105 +133,13 @@
   
   h1 {
     text-align: center;
+    color:beige;
   }
-  
-  button {
-    padding: 10px 20px;
-    font-size: 20px;
-    background-color: #4c6baf;
-    color: white;
-    border: none;
-    cursor: pointer;
-    
-  }
-  
-  button:hover {
-    background-color: #160a57;
-  }
-  
-  #game {
-    display: none;
-  }
-  
-  .game-board {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  #word {
-    font-size: 30px;
-    margin-bottom: 20px;
-  }
-  
-  #guesses {
-    font-size: 20px;
-    margin-bottom: 20px;
-  }
-  
-  #guess-input-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
-  }
-  
-  #guess-input {
-    font-size: 30px;
-    width: 50px;
+
+  h4{
     text-align: center;
-    margin-right: 20px;
+    color:beige;
   }
   
-  #start-button{
-  
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-       margin-left: 45%;
-       margin-top: 8%;  
-       border-radius: 10px;    
-  }
 
-  #guess-button{
-  
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 0%; 
-    border-radius: 10px;   
-}
-#spin-button{
-  
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-left: 5%;  
-    border-radius: 10px;
-        
-}
-
-  #spin-result {
-    font-size: 20px;
-    margin-bottom: 20px;
-  }
-  
-  #total-prize {
-    font-size: 20px;
-    margin-bottom: 20px;
-  }
-  
-  .game-wheel {
-   
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    width: 400px;
-    height: 400px;
-    margin: 0 auto;
-  }
   
