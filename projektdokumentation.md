@@ -122,15 +122,15 @@ Admin-Screen: <br>
 
 | US-№ | Erledigt? | Entsprechende Code-Dateien oder Erklärung |
 | ---- | --------- | ----------------------------------------- |
-| 1.1    | nein |       |
+| 1.1    | nein |   script2.js   |
 | 2.1  |    nein   |    Aufgrund des Zeitaufwands für die erste UserStory, konnte ich es nicht schaffen.          |
 | 3.1    | nein |      Ich konnte nur eine Kategorie anlegen. Bei den anderen Kategorien kam es zu Problemen im Code.                                  |
-| 4.1  |      ja    |                                      |
-| A.1    | ja |                                    |
-| 5.1  |     ja      |                                     |
+| 4.1  |      ja    |       script.js  und spiel.html                          |
+| A.1    | ja |            script.js und spiel.html                       |
+| 5.1  |     ja      |            script.js und spiel.html                        |
 | B.1    | nein |      Aufgrund des Zeitaufwands für die Spielfunktion, konnte ich nicht dazu kommen.                                      |
 | 6.1  |      nein     |       Die ganze Highscore-List konnte nicht implementiert werden, aufgrund des Problems mit den Lebenspunkten.                                    |
-| 7.1    | nein |    Die Funktion für diese ist grundsätzlich einfach, aber ich hing noch an der FireBase fest.                                       |
+| 7.1    | nein |    script.js                                    |
 
 
 # 8 Testprotokoll
@@ -139,8 +139,14 @@ Admin-Screen: <br>
 
 | TC-№ | Datum | Resultat | Tester |
 | ---- | ----- | -------- | ------ |
-| 1.1  |       |          |        |
-| 2.1 |       |          |        |
+| 1.1  | 02.03.2023      |          |    R.Shayanthan    |
+| 2.1 |  02.03.2023     |          |   R.Shayanthan      |
+| 3.1  | 02.03.2023      |          |  R.Shayanthan       |
+| 4.1 |  02.03.2023     |          |  R.Shayanthan       |
+| 5.1  | 02.03.2023      |          | R.Shayanthan        |
+| 6.1 |  02.03.2023     |          |   R.Shayanthan      |
+| 7.1  | 02.03.2023      |          |  R.Shayanthan       |
+
 
 ✍️ Vergessen Sie nicht, ein Fazit hinzuzufügen, welches das Test-Ergebnis einordnet.
 
